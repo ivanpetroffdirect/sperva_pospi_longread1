@@ -1,0 +1,1434 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Наталья Кравченко — специалист по детскому сну</title>
+
+<meta
+  name="description"
+  content="Помощь родителям, которые хотят наладить сон ребёнка и вернуть спокойные вечера и ночи."
+>
+
+<style>
+:root {
+  --bg: #f7f3ed;
+  --paper: #fffdf9;
+  --ink: #27231f;
+  --muted: #6f665e;
+  --accent: #b86b4b;
+  --accent-dark: #a95f42;
+  --line: #e7ddd2;
+  --soft: #f0e5db;
+  --dark: #2e2925;
+  --radius: 26px;
+  --shadow: 0 14px 45px rgba(55, 40, 28, .08);
+  --max: 940px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Arial,
+    sans-serif;
+  line-height: 1.55;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.wrap {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 22px;
+}
+
+/* =========================
+   TYPOGRAPHY
+========================= */
+
+h1 {
+  font-size: clamp(40px, 7vw, 72px);
+  line-height: .98;
+  letter-spacing: -.045em;
+  margin: 0 0 24px;
+  max-width: 850px;
+}
+
+h2 {
+  font-size: clamp(32px, 5vw, 50px);
+  line-height: 1.02;
+  letter-spacing: -.035em;
+  margin: 0 0 18px;
+}
+
+h3 {
+  font-size: 22px;
+  line-height: 1.15;
+  margin: 0 0 10px;
+}
+
+p {
+  margin-top: 0;
+}
+
+.lead {
+  font-size: clamp(20px, 3vw, 27px);
+  max-width: 760px;
+  color: #514941;
+  margin: 0 0 30px;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 17px 25px;
+
+  border-radius: 15px;
+  border: none;
+
+  background: var(--accent);
+  color: white;
+
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 17px;
+
+  box-shadow: 0 9px 25px rgba(184, 107, 75, .2);
+
+  transition: .2s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  background: var(--accent-dark);
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  padding: 28px 0 54px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #f5e9df 0%,
+      #f7f3ed 100%
+    );
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 14px;
+  color: var(--muted);
+
+  margin-bottom: 44px;
+}
+
+.logo {
+  font-weight: 800;
+  color: var(--ink);
+}
+
+.tag {
+  padding: 8px 13px;
+
+  border: 1px solid var(--line);
+  border-radius: 99px;
+
+  background: rgba(255,255,255,.5);
+}
+
+.hero-photo {
+  margin-top: 38px;
+
+  min-height: 300px;
+
+  border-radius: 32px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ead5c7,
+      #d9b9a8
+    );
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #6f574b;
+  text-align: center;
+
+  padding: 30px;
+
+  font-weight: 700;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+section {
+  padding: 78px 0;
+}
+
+.paper {
+  background: var(--paper);
+}
+
+.soft {
+  background: var(--soft);
+}
+
+/* =========================
+   STORY
+========================= */
+
+.story {
+  font-size: 20px;
+  max-width: 760px;
+}
+
+.story p {
+  margin: 0 0 17px;
+}
+
+.quote {
+  font-size: clamp(25px, 4vw, 38px);
+  line-height: 1.15;
+
+  font-weight: 750;
+
+  letter-spacing: -.025em;
+
+  border-left: 5px solid var(--accent);
+
+  padding-left: 24px;
+
+  margin: 35px 0;
+}
+
+/* =========================
+   GRID
+========================= */
+
+.grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 18px;
+
+  margin-top: 34px;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.card {
+  padding: 27px;
+
+  border: 1px solid var(--line);
+
+  background: var(--paper);
+
+  border-radius: var(--radius);
+
+  box-shadow: var(--shadow);
+}
+
+.card p:last-child {
+  margin-bottom: 0;
+}
+
+/* =========================
+   NUMBERS
+========================= */
+
+.num {
+  width: 42px;
+  height: 42px;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--accent);
+  color: white;
+
+  font-weight: 800;
+
+  margin-bottom: 20px;
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+  display: grid;
+
+  grid-template-columns:
+    .8fr 1.2fr;
+
+  gap: 35px;
+
+  align-items: start;
+}
+
+.about-photo {
+  min-height: 420px;
+
+  border-radius: 28px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #e4cec0,
+      #c9a894
+    );
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  padding: 20px;
+
+  color: #654f44;
+
+  font-weight: 700;
+}
+
+.about-copy p {
+  margin: 0 0 15px;
+}
+
+/* =========================
+   REVIEWS
+========================= */
+
+.review {
+  position: relative;
+}
+
+.review:before {
+  content: "“";
+
+  position: absolute;
+
+  right: 22px;
+  top: 5px;
+
+  font-size: 72px;
+
+  color: #ead3c6;
+
+  font-family: Georgia, serif;
+}
+
+.review p {
+  font-size: 18px;
+}
+
+.review small {
+  color: var(--muted);
+}
+
+/* =========================
+   DARK SECTION
+========================= */
+
+.warning {
+  background: var(--dark);
+  color: #fff;
+
+  padding: 80px 0;
+}
+
+.warning h2 {
+  color: #fff;
+}
+
+.warning .grid {
+  margin-top: 30px;
+}
+
+.warning .card {
+  background: #39322d;
+  border-color: #514941;
+  box-shadow: none;
+}
+
+.warning .card p {
+  color: #ded6d0;
+}
+
+/* =========================
+   CTA
+========================= */
+
+.cta {
+  background:
+    linear-gradient(
+      145deg,
+      #f0d5c5,
+      #f7e9de
+    );
+
+  text-align: center;
+}
+
+.cta .lead {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* =========================
+   FORM
+========================= */
+
+.form {
+  max-width: 580px;
+
+  margin: 30px auto 0;
+
+  display: grid;
+
+  gap: 12px;
+
+  text-align: left;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+
+  padding: 16px 17px;
+
+  border: 1px solid #d8c9bd;
+
+  border-radius: 14px;
+
+  background: #fff;
+
+  font: inherit;
+}
+
+.form textarea {
+  min-height: 110px;
+
+  resize: vertical;
+}
+
+.form button {
+  border: 0;
+
+  cursor: pointer;
+}
+
+.note {
+  font-size: 13px;
+
+  color: var(--muted);
+
+  margin-top: 13px;
+
+  text-align: center;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  padding: 30px 0 50px;
+
+  text-align: center;
+
+  color: var(--muted);
+
+  font-size: 13px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+  .grid,
+  .about {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding-top: 18px;
+  }
+
+  .top {
+    margin-bottom: 34px;
+
+    gap: 12px;
+
+    align-items: flex-start;
+  }
+
+  .tag {
+    font-size: 12px;
+  }
+
+  .about-photo {
+    min-height: 320px;
+  }
+
+  section {
+    padding: 58px 0;
+  }
+
+  .card {
+    padding: 23px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+
+<!-- =========================================
+     HERO
+========================================= -->
+
+<header class="hero">
+
+  <div class="wrap">
+
+    <div class="top">
+
+      <div class="logo">
+        Наталья Кравченко
+      </div>
+
+      <div class="tag">
+        Специалист по детскому сну
+      </div>
+
+    </div>
+
+
+    <h1>
+      Ребёнок долго засыпает,
+      просыпается ночью
+      или встаёт слишком рано?
+    </h1>
+
+
+    <p class="lead">
+      Если вы уже устали искать очередной
+      «идеальный режим» и просто хотите
+      снова нормально спать — давайте
+      разберёмся, что происходит именно
+      в вашей семье.
+    </p>
+
+
+    <a
+      class="btn"
+      href="#consultation"
+    >
+      Разобрать сон ребёнка
+    </a>
+
+
+    <div class="hero-photo">
+
+      Здесь будет фотография Натальи
+      или эмоциональное фото мамы и ребёнка
+
+    </div>
+
+  </div>
+
+</header>
+
+
+
+<!-- =========================================
+     PROBLEM / STORY
+========================================= -->
+
+<section class="paper">
+
+  <div class="wrap story">
+
+    <h2>
+      «Я просто хочу выспаться
+      хотя бы одну ночь»
+    </h2>
+
+
+    <p>
+      Вы укладываете ребёнка, ждёте,
+      пока он наконец уснёт, осторожно
+      выходите из комнаты — и через
+      несколько минут снова слышите плач.
+    </p>
+
+
+    <p>
+      Или он просыпается ночью несколько раз.
+      Засыпает только с грудью, на руках,
+      рядом с вами. А утром открывает глаза
+      тогда, когда вам кажется, что вы
+      только-только легли.
+    </p>
+
+
+    <p>
+      Днём всё повторяется: короткие сны,
+      капризы, сложные укладывания.
+      И постепенно вся жизнь семьи
+      начинает вращаться вокруг сна.
+    </p>
+
+
+    <div class="quote">
+
+      Вы не плохая мама.
+      И вам не нужно просто
+      «потерпеть, пока перерастёт».
+
+    </div>
+
+
+    <p>
+      Когда родители понимают,
+      <strong>
+        что именно мешает ребёнку спать
+      </strong>,
+      становится гораздо проще выбрать
+      подходящие действия и последовательно
+      изменить ситуацию.
+    </p>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================
+     REASONS
+========================================= -->
+
+<section>
+
+  <div class="wrap">
+
+    <h2>
+      Почему ребёнок может плохо спать?
+    </h2>
+
+
+    <p class="lead">
+
+      У одной семьи проблема начинается
+      с режима. У другой — с условий сна.
+      У третьей — с привычного способа
+      засыпания.
+
+      Поэтому универсальная инструкция
+      из интернета часто не срабатывает.
+
+    </p>
+
+
+    <div class="grid">
+
+
+      <article class="card">
+
+        <h3>
+          Режим не подходит
+        </h3>
+
+        <p>
+          Ребёнок может ложиться слишком
+          рано или слишком поздно, получать
+          недостаточно или слишком много
+          времени бодрствования.
+        </p>
+
+      </article>
+
+
+      <article class="card">
+
+        <h3>
+          Есть сильная ассоциация на сон
+        </h3>
+
+        <p>
+          Например, ребёнку трудно снова
+          уснуть без груди, укачивания,
+          рук или присутствия взрослого.
+        </p>
+
+      </article>
+
+
+      <article class="card">
+
+        <h3>
+          Условия мешают
+        </h3>
+
+        <p>
+          Свет, шум, температура, одежда,
+          привычки перед сном — мелочи,
+          которые иногда сильно влияют
+          на качество отдыха.
+        </p>
+
+      </article>
+
+
+      <article class="card">
+
+        <h3>
+          Ребёнок меняется
+        </h3>
+
+        <p>
+          Новые навыки, возрастные переходы,
+          изменения режима и другие события
+          могут временно или надолго нарушить
+          привычный сон.
+        </p>
+
+      </article>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================
+     METHOD
+========================================= -->
+
+<section class="soft">
+
+  <div class="wrap">
+
+    <h2>
+      Что делать вместо
+      бесконечных советов?
+    </h2>
+
+
+    <p class="lead">
+
+      Не собирать ещё десять рекомендаций,
+      а сначала понять вашу конкретную ситуацию.
+
+    </p>
+
+
+    <div class="grid">
+
+
+      <article class="card">
+
+        <div class="num">
+          1
+        </div>
+
+        <h3>
+          Разобраться в причине
+        </h3>
+
+        <p>
+          Смотрим на возраст, режим,
+          самочувствие, условия сна
+          и привычный способ укладывания.
+        </p>
+
+      </article>
+
+
+      <article class="card">
+
+        <div class="num">
+          2
+        </div>
+
+        <h3>
+          Настроить базу
+        </h3>
+
+        <p>
+          Убираем очевидные факторы,
+          которые мешают расслаблению
+          и стабильному сну.
+        </p>
+
+      </article>
+
+
+      <article class="card">
+
+        <div class="num">
+          3
+        </div>
+
+        <h3>
+          Собрать понятный режим
+        </h3>
+
+        <p>
+          Ориентируемся не на красивую
+          таблицу, а на реальные потребности
+          ребёнка и ритм семьи.
+        </p>
+
+      </article>
+
+
+      <article class="card">
+
+        <div class="num">
+          4
+        </div>
+
+        <h3>
+          Менять привычки постепенно
+        </h3>
+
+        <p>
+          Выбираем посильные шаги и заранее
+          понимаем, как реагировать
+          на сопротивление или откаты.
+        </p>
+
+      </article>
+
+
+      <article class="card">
+
+        <div class="num">
+          5
+        </div>
+
+        <h3>
+          Закрепить результат
+        </h3>
+
+        <p>
+          Формируем понятную систему,
+          которую родители смогут поддерживать
+          и после консультации.
+        </p>
+
+      </article>
+
+
+      <article class="card">
+
+        <div class="num">
+          +
+        </div>
+
+        <h3>
+          Без чувства вины
+        </h3>
+
+        <p>
+          Цель — не идеальный ребёнок
+          и не идеальная мама.
+          Цель — более спокойный сон
+          и жизнь семьи.
+        </p>
+
+      </article>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================
+     ABOUT
+========================================= -->
+
+<section>
+
+  <div class="wrap about">
+
+
+    <div class="about-photo">
+
+      Фотография Натальи
+
+    </div>
+
+
+    <div class="about-copy">
+
+      <h2>
+        Обо мне
+      </h2>
+
+
+      <p>
+        <strong>
+          Меня зовут Наталья Кравченко,
+          я специалист по детскому сну.
+        </strong>
+      </p>
+
+
+      <p>
+        Я помогаю родителям разобраться
+        с трудностями сна ребёнка и выстроить
+        понятную систему, которая подходит
+        именно их семье.
+      </p>
+
+
+      <p>
+        В работе учитываю возраст ребёнка,
+        его индивидуальные особенности,
+        привычки, режим дня и образ жизни семьи.
+      </p>
+
+
+      <p>
+        Моя задача — не просто дать список
+        рекомендаций, а помочь родителям
+        понять, почему возникла проблема
+        и какие шаги действительно имеют смысл
+        в их ситуации.
+      </p>
+
+
+      <p>
+        Этот блок пока заполнен по структуре
+        референса и будет заменён на реальные
+        образование, опыт, специализацию
+        и регалии Натальи.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================
+     CONSULTATION
+========================================= -->
+
+<section class="paper">
+
+  <div class="wrap">
+
+    <h2>
+      Что вы получите
+      на консультации
+    </h2>
+
+
+    <div class="grid">
+
+
+      <article class="card">
+
+        <h3>
+          Разбор вашей ситуации
+        </h3>
+
+        <p>
+          Соберём картину сна: как проходит день,
+          как ребёнок засыпает, сколько и когда
+          спит, что происходит ночью.
+        </p>
+
+      </article>
+
+
+      <article class="card">
+
+        <h3>
+          Поиск точек роста
+        </h3>
+
+        <p>
+          Определим, какие факторы сейчас
+          сильнее всего влияют на сон
+          и с чего рациональнее начать.
+        </p>
+
+      </article>
+
+
+      <article class="card">
+
+        <h3>
+          Понятный план
+        </h3>
+
+        <p>
+          Вы уйдёте не с набором общих советов,
+          а с последовательностью действий
+          для вашей семьи.
+        </p>
+
+      </article>
+
+
+      <article class="card">
+
+        <h3>
+          Ответы на вопросы
+        </h3>
+
+        <p>
+          Разберём ваши сомнения, привычки
+          ребёнка и ситуации, которые особенно
+          сложно переживать ночью.
+        </p>
+
+      </article>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================
+     REVIEWS
+========================================= -->
+
+<section class="soft">
+
+  <div class="wrap">
+
+    <h2>
+      Истории родителей
+    </h2>
+
+
+    <p class="lead">
+
+      Здесь будут реальные отзывы клиентов
+      Натальи.
+
+      Пока оставлены демонстрационные карточки,
+      чтобы увидеть будущую структуру блока.
+
+    </p>
+
+
+    <div class="grid">
+
+
+      <article class="card review">
+
+        <h3>
+          «Стало понятно, что делать»
+        </h3>
+
+        <p>
+          После разбора мы наконец поняли,
+          почему укладывание каждый вечер
+          превращалось в борьбу, и получили
+          конкретный план действий.
+        </p>
+
+        <small>
+          Имя, возраст ребёнка —
+          заменить реальным отзывом
+        </small>
+
+      </article>
+
+
+      <article class="card review">
+
+        <h3>
+          «Наконец появились спокойные вечера»
+        </h3>
+
+        <p>
+          Самым ценным оказалось не только
+          изменение сна, но и ощущение,
+          что мы больше не действуем вслепую.
+        </p>
+
+        <small>
+          Имя, возраст ребёнка —
+          заменить реальным отзывом
+        </small>
+
+      </article>
+
+
+      <article class="card review">
+
+        <h3>
+          «Перестали метаться между советами»
+        </h3>
+
+        <p>
+          Теперь мы понимаем, что происходит
+          со сном и что делать, если привычный
+          режим снова начинает сбиваться.
+        </p>
+
+        <small>
+          Имя, возраст ребёнка —
+          заменить реальным отзывом
+        </small>
+
+      </article>
+
+
+      <article class="card review">
+
+        <h3>
+          «Получили рабочую систему»
+        </h3>
+
+        <p>
+          У нас появился понятный алгоритм,
+          а не очередная таблица из интернета,
+          которую невозможно соблюдать.
+        </p>
+
+        <small>
+          Имя, возраст ребёнка —
+          заменить реальным отзывом
+        </small>
+
+      </article>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================
+     PAIN / COST OF INACTION
+========================================= -->
+
+<section class="warning">
+
+  <div class="wrap">
+
+    <h2>
+      Почему не стоит бесконечно ждать,
+      что всё решится само?
+    </h2>
+
+
+    <p class="lead" style="color:#ded6d0">
+
+      Потому что усталость родителей тоже
+      накапливается.
+
+      И проблема сна постепенно начинает
+      влиять не только на ночь.
+
+    </p>
+
+
+    <div class="grid">
+
+
+      <article class="card">
+
+        <h3>
+          Вы выматываетесь
+        </h3>
+
+        <p>
+          Когда ночь постоянно прерывается,
+          становится сложнее сохранять ресурс,
+          терпение и силы на обычные дела.
+        </p>
+
+      </article>
+
+
+      <article class="card">
+
+        <h3>
+          Вся жизнь подстраивается под сон
+        </h3>
+
+        <p>
+          Вечер заканчивается укладыванием,
+          планы откладываются, а любое
+          изменение режима кажется катастрофой.
+        </p>
+
+      </article>
+
+
+      <article class="card">
+
+        <h3>
+          Появляется чувство вины
+        </h3>
+
+        <p>
+          «Я что-то делаю не так» —
+          хотя зачастую родителям просто
+          не хватает понятного плана и поддержки.
+        </p>
+
+      </article>
+
+
+      <article class="card">
+
+        <h3>
+          Сложнее менять привычки
+        </h3>
+
+        <p>
+          Чем дольше семья живёт по одному
+          сценарию, тем страшнее кажется сама
+          мысль о переменах.
+        </p>
+
+      </article>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================
+     FINAL CTA
+========================================= -->
+
+<section
+  id="consultation"
+  class="cta"
+>
+
+  <div class="wrap">
+
+
+    <h2>
+      Давайте разберём
+      сон вашего ребёнка
+    </h2>
+
+
+    <p class="lead">
+
+      На консультации мы посмотрим
+      на ситуацию целиком, найдём основные
+      причины трудностей и составим понятный
+      план дальнейших действий.
+
+    </p>
+
+
+    <div
+      class="grid"
+      style="max-width:760px;margin:30px auto"
+    >
+
+
+      <article class="card">
+
+        <h3>
+          До консультации
+        </h3>
+
+        <p>
+          Вы отвечаете на несколько вопросов
+          о сне ребёнка, чтобы Наталья заранее
+          понимала контекст.
+        </p>
+
+      </article>
+
+
+      <article class="card">
+
+        <h3>
+          На консультации
+        </h3>
+
+        <p>
+          Разбираем ситуацию, отвечаем
+          на вопросы и определяем
+          конкретные шаги.
+        </p>
+
+      </article>
+
+
+    </div>
+
+
+    <!-- FORM -->
+
+    <form
+      class="form"
+      onsubmit="return submitForm(event)"
+    >
+
+      <input
+        name="name"
+        placeholder="Ваше имя"
+        required
+      >
+
+
+      <input
+        name="age"
+        placeholder="Возраст ребёнка"
+        required
+      >
+
+
+      <textarea
+        name="problem"
+        placeholder="Коротко опишите, что сейчас происходит со сном"
+        required
+      ></textarea>
+
+
+      <button
+        class="btn"
+        type="submit"
+      >
+        Оставить заявку
+      </button>
+
+    </form>
+
+
+    <div class="note">
+
+      Форма пока демонстрационная.
+      После получения контакта её можно подключить
+      к VK, Telegram, почте или CRM.
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+<footer class="footer">
+
+  <div class="wrap">
+
+    Наталья Кравченко · специалист по детскому сну
+
+  </div>
+
+</footer>
+
+
+
+<!-- =========================================
+     JAVASCRIPT
+========================================= -->
+
+<script>
+
+function submitForm(event) {
+
+  event.preventDefault();
+
+  alert(
+    "Спасибо! Сейчас форма работает " +
+    "в демонстрационном режиме. " +
+    "Подключите нужный канал связи."
+  );
+
+  return false;
+
+}
+
+</script>
+
+
+</body>
+</html>
